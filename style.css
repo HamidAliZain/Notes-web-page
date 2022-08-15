@@ -1,0 +1,123 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+.nav-container {
+    background-color: gold;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    font-size: 20px;
+    padding-left: 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+.add {
+    padding: 0.5rem 2rem;
+    background-color: gold;
+    border: 1px solid white;
+}
+
+.hidden {
+    display: none;
+}
+
+#note-container {
+    display: grid;
+    grid-template-columns: auto auto;
+    width: 90%;
+}
+
+
+.note {
+    border: 4px dashed gold;
+    font-size: 20px;
+    margin: 30px 20px;
+    border-radius: 20px;
+    width: 350px;
+    word-break: break-all;
+}
+
+body {
+    background-color: azure;
+}
+
+.operation, .btn-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: right;
+    padding: 10px 10px;
+}
+
+.btn-container {
+    margin-top: 50px;
+}
+
+.edit {
+    margin: 0px 20px;
+}
+
+.operation {
+    font-size: 15px;
+}
+
+.green {
+    background-color: green;
+    color: white;
+}
+
+.red {
+    background-color: red;
+    color: white;
+}
+
+.green:hover {
+    background-color: white;
+    color: green;
+}
+
+.red:hover {
+    background-color: white;
+    color: red;
+}
+
+.operation button {
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+}
+
+textarea {
+    border: 1px solid #ffffff;
+    width: 100%;
+    overflow: hidden;
+    font-size: 20px;
+    resize: none;
+}
+
+@media only screen and (max-width: 800px) {
+
+    #note-container {
+        grid-template-columns: auto;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+
+    #note-container {
+        grid-template-columns: auto;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .note {
+        width: 300px;
+    }
+}
